@@ -29,7 +29,6 @@ Output Format:
 <select name="format">
 <option value="csv" selected> CSV</option>
 <option value="json"> JSON</option>
-<option value="form"> FORMULAE</option>
 </select><br />
 <!--<input type="radio" name="format" value="csv" checked> CSV<br>
 <input type="radio" name="format" value="json"> JSON<br>
@@ -39,10 +38,12 @@ Output Format:
 <p><input type="file" name="xlfile" id="xlf" /> ... or click here to select a file</p>
 <textarea id="b64data">... or paste a base64-encoding here</textarea>
 <input type="button" id="dotext" value="Click here to process the base64 text" onclick="b64it();"/><br />
-Advanced Demo Options: <br id="options"/>
+	<div id="options">
+Advanced Demo Options: <br/>
 Use Web Workers: (when available) <input id="options" type="checkbox" name="useworker" checked><br />
 Use Transferrables: (when available) <input type="checkbox" name="xferable" checked><br />
 Use readAsBinaryString: (when available) <input type="checkbox" name="userabs" checked><br />
+	</div>
 <pre id="out"></pre>
 <br />
 <!-- uncomment the next line here and in xlsxworker.js for encoding support -->
