@@ -22,18 +22,16 @@
 </style>
 </head>
 <body>
-<b>JS-XLSX (XLSX/XLSB/XLSM/XLS/XML) Live Demo</b><br />
+<h1>KPI Data Exraction</h1>
+<b></b><br />
 Output Format:
 <select name="format">
 <option value="csv" selected> CSV</option>
 <option value="json"> JSON</option>
-<option value="form"> FORMULAE</option>
 </select><br />
 <!--<input type="radio" name="format" value="csv" checked> CSV<br>
 <input type="radio" name="format" value="json"> JSON<br>
 <input type="radio" name="format" value="form"> FORMULAE<br> -->
-
-<div id="drop">Drop an XLSX / XLSM / XLSB / ODS / XLS / XML file here to see sheet data</div>
 <p><input type="file" name="xlfile" id="xlf" /> ... or click here to select a file</p>
 <textarea id="b64data">... or paste a base64-encoding here</textarea>
 <input type="button" id="dotext" value="Click here to process the base64 text" onclick="b64it();"/><br />
