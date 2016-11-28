@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" href="style.css">
-<title>JS-XLSX Live Demo</title>
+<title>KPI Data Extraction</title>
 <style>
 #drop{
 	border:3px solid #bbb;
@@ -28,25 +28,13 @@
          <div class="grid-100">
            <div class="heading">
              <h1>KPI Data Exraction</h1>
-		<b>JS-XLSX (XLSX/XLSB/XLSM/XLS/XML) Live Demo</b><br />
 			Output Format:
 			<select name="format">
 			<option value="csv" selected> CSV</option>
 			<option value="json"> JSON</option>
-			<option value="form"> FORMULAE</option>
 			</select><br />
-			<!--<input type="radio" name="format" value="csv" checked> CSV<br>
-			<input type="radio" name="format" value="json"> JSON<br>
-			<input type="radio" name="format" value="form"> FORMULAE<br> -->
-
-			<div id="drop">Drop an XLSX / XLSM / XLSB / ODS / XLS / XML file here to see sheet data</div>
 			<p><input type="file" name="xlfile" id="xlf" /> ... or click here to select a file</p>
-			<textarea id="b64data">... or paste a base64-encoding here</textarea>
 			<input type="button" id="dotext" value="Click here to process the base64 text" onclick="b64it();"/><br />
-			Advanced Demo Options: <br />
-			Use Web Workers: (when available) <input type="checkbox" name="useworker" checked><br />
-			Use Transferrables: (when available) <input type="checkbox" name="xferable" checked><br />
-			Use readAsBinaryString: (when available) <input type="checkbox" name="userabs" checked><br />
 			<pre id="out"></pre>
 			<br />
 		    </div>
@@ -54,12 +42,9 @@
      	        </div>
               </div>
 	    </div>
-			<!-- uncomment the next line here and in xlsxworker.js for encoding support -->
-			<!--<script src="dist/cpexcel.js"></script>-->
 			<script src="shim.js"></script>
 			<script src="jszip.js"></script>
 			<script src="xlsx.js"></script>
-			<!-- uncomment the next line here and in xlsxworker.js for ODS support -->
 			<script src="dist/ods.js"></script>
 			<script>
 			var X = XLSX;
