@@ -2094,14 +2094,14 @@ footer p {
  border: 2px solid; border-color:#bbbbbb;
  }
  #drop{
-  border:3px solid #bbb;
+  border:3px solid #edeff0;
   -moz-border-radius:5px;
   -webkit-border-radius:15px;
   border-radius:5px;
   padding:50px;
    margin: 50px;
   text-align:center;
-  font:20pt bold;color:#bbb
+  font:20pt bold;color:#edeff0
  }
  #b64data{
   width:100%;
