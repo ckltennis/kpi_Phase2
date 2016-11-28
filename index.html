@@ -22,6 +22,32 @@
 </style>
 </head>
 <body>
+	 <div class="grid-container centered">
+     <div class="grid-100">
+       <div class="contained">
+         <div class="grid-100">
+           <div class="heading">
+             <h1>KPI Data Exraction</h1>
+             <p>Choose file you'd like to extract data from </p>
+           </div>
+           <ul class="filter-select">
+           </ul>
+         </div>
+         <div id="photos">
+           Output Format:
+           <select name="format">
+           <option value="csv" selected> CSV</option>
+           <option value="json"> JSON</option>
+           </select><br />
+           <div id="drop">Drop file here to see sheet data</div>
+           <p><input type="file" name="xlfile" id="xlf" /> ... or click here to select a file</p>
+           <input type="button" id="dotext" value="Click here to process text" onclick="b64it()"/><br />
+           <pre id="out"></pre>
+           <br />
+           </div>
+       </div>
+     </div>
+   </div>
 <b>JS-XLSX (XLSX/XLSB/XLSM/XLS/XML) Live Demo</b><br />
 Output Format:
 <select name="format">
